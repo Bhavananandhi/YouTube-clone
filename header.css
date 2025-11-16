@@ -1,0 +1,135 @@
+
+
+.top{
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color: white;
+    border-bottom: solid rgb(235, 234, 234);
+    border-bottom-width: 1.99px;
+    z-index: 100;
+}
+.first{
+    
+    display: flex;
+    align-items: center;
+}
+.search{
+flex:1;
+margin-left:70px;
+margin-right:35px;
+max-width: 700px;
+align-items: center;
+display: flex;
+
+}
+.sbar{
+    flex:1;
+    height: 45px;
+    padding-left: 10px;
+    border:solid rgb(232, 225, 225);
+    border-width: 1.8px;
+    border-radius: 23px 0px 0px 23px;
+    width: 0;
+    
+}
+.sbar::placeholder{
+    font-family: Roboto,Arial;
+    font-size: 15px;
+}
+
+.last{
+    width:250px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 20px;
+    flex-shrink: 0;
+
+}
+.drawer{
+  margin-left: 24px;
+  margin-right: 24px;
+    height: 35px;
+   
+}
+.yt{
+  
+   
+       height: 29px;
+       width: 100px;
+    
+}
+.slogo{
+    height: 51px;
+    padding-top: 3px;
+    background-color: rgb(246, 246, 241);
+    border:solid rgb(232, 225, 225);
+    border-width:1.8px ;
+    margin-left:-1.7px;
+    border-radius:0px 23px 23px 0px;
+    width: 66px;
+    margin-right: 10px;
+    
+  
+}
+.slogo,.mic,.icon-hover,.notifnum{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.slogo .tooltip,.mic .tooltip,.icon-hover .tooltip,.notifnum .tooltip{
+    position: absolute;
+    background-color: gray;
+    color:white;
+    padding:4px 8px 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -35px;
+    opacity: 0;
+    transition: opacity 0.15s ;
+    pointer-events: none;
+    white-space: nowrap;
+
+}
+.slogo:hover .tooltip,
+.mic:hover .tooltip,
+.icon-hover:hover .tooltip,
+.notifnum:hover .tooltip{
+    opacity: 1;
+}
+.srlogo{
+    opacity: 0.6;
+}
+
+.mic{
+    border: none;
+    height:32px;
+    background-color: rgba(251, 250, 250, 0.707);
+    border-radius: 50%;
+    
+}
+.videobtn,.gridlogo,.notif,.profheader{
+    height:27px;
+}
+
+.notifnum{
+    position: relative;
+}
+.numofnotif{
+    position:absolute;
+    top:-2px;
+    right:-2px;
+    font-size:11px;
+    background-color: rgb(219, 6, 6);
+    color: white;
+    font-family: Arial;
+    padding:2px 5px 2px 5px ;
+    border-radius: 50%;
+    }

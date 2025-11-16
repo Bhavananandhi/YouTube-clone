@@ -1,0 +1,107 @@
+body{
+    font-family:Arial;
+    background-color: rgb(243, 244, 245);
+    margin: 0px 0px 0px 270px;
+    padding-top: 100px;
+    padding-right: 40px;
+}
+
+.videos{
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(400px,4fr));
+    gap:20px;
+    
+}
+
+.cards{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
+.thumb{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+   
+}
+.thumbrow{
+    position: relative;
+    
+}
+.video_len{
+    position:absolute;
+    right:7px;
+    bottom:12px;
+    background-color: rgb(9, 4, 4);
+    color: white;
+    padding: 3px;
+    z-index: 1;
+    border-radius: 4px;
+    opacity: 0.8;
+
+}
+
+.bottom{
+    display: flex;
+    gap:10px;
+    margin-top: 10px;
+}
+.prof{
+    margin-top: 5px;
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.info{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+}
+.title{
+    
+ 
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 0px;
+
+}
+.channelnm{
+   
+    margin-bottom: 0px;
+    font-size:15px ;
+    font-weight: 600;
+    color: rgb(87, 86, 84);
+}
+.views{
+    margin:5px 0px 0px 0px;
+     font-size: 15px;
+     font-weight: 600;
+    color:rgb(87, 86, 84);
+}
+
+.tick{
+    background-color: rgb(87, 86, 84);
+    color: white;
+    font-size: 10px;
+    padding: 3px 4px 1px 4px;
+    border-radius: 10px;
+    opacity: 0.8;
+    
+ 
+}
+
+@media (max-width:779px){
+    body{
+        margin-left: 50px;
+    }
+}
+
+@media (min-width:780px) and (max-width:1600px){
+    body{
+        margin-left: 220px;    }
+}
+
+

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube using grid</title>
+    <link href="video.css" rel="stylesheet">
+    <link href="header.css" rel="stylesheet">
+    <link href="sidebar.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="top">
+
+        <div class="first"><img class="drawer" src="images/drawer2.svg">
+            <img class="yt" src="images/ytlogo3.jpg">
+
+        </div>
+        <div class="search">
+            <input placeholder="Search" type="text" class="sbar">
+            <button class="slogo"><img class="srlogo" src="images/search.svg">
+            <div class="tooltip">Search</div>
+        </button>
+            <button class="mic"><img src="images/mic2.svg">
+                <div class="tooltip">Search with your voice</div></button>
+               
+        </div>
+        <div class="last">
+            <div class="icon-hover">
+                <img class="videobtn" src="images/video.svg">
+                 <div class="tooltip">Create</div>
+            </div> 
+             <div class="icon-hover">
+                 <img class="gridlogo" src="images/grid.svg">
+                 <div class="tooltip">View</div>
+             </div>
+            <div class="notifnum">
+                <img class="notif" src="images/bell.svg">
+                <div class="numofnotif">3</div>
+                <div class="tooltip">Notifications</div>
+            </div>
+            <div class="icon-hover">
+                <img src="images/profile1.jpg" class="profheader">
+                <div class="tooltip">Profile</div>
+            </div>
+            
+        </div>
+    </header>
+    <nav class="sidebar">
+        <div class="sidebarlink">
+            <div><img src="images/hoemlogo.svg" class="logo"></div>
+            <div class="logo_name">
+                <p class="logo_name_p">Home</p>
+            </div>
+        </div>
+        <div class="sidebarlink">
+            <div><img src="images/subslogo.svg" class="logo"></div>
+            <div class="logo_name">
+                <p class="logo_name_p">Subscriptions</p>
+            </div>
+        </div>
+        <div class="sidebarlink">
+            <div style="  opacity:0.7;
+    margin-left: 15px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 19px;">
+                <p>You</p>
+            </div>
+            <div><img style="  width:30px;
+            height: 20px;
+    opacity:0.7;
+    margin-left: 15px" src="images/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"></div>
+
+        </div>
+
+        <div class="sidebarlink">
+            <div><img src="images/history_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="logo"></div>
+            <div class="logo_name">
+                <p class="logo_name_p">History</p>
+            </div>
+        </div>
+        <div class="sidebarlink">
+            <div><img src="images/playlist_play_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="logo"></div>
+            <div class="logo_name">
+                <p class="logo_name_p">Playlists</p>
+            </div>
+        </div>
+        <div class="sidebarlink">
+            <div><img src="images/schedule_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="logo"></div>
+            <div class="logo_name">
+                <p class="logo_name_p">Watch Later</p>
+            </div>
+        </div>
+         <div class="sidebarlink">
+            <div><img src="images/thumb_up_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="logo"></div>
+            <div class="logo_name">
+                <p class="logo_name_p">Liked Videos</p>
+            </div>
+        </div>
+         <div style="border-bottom: solid rgb(200, 199, 199); border-bottom-width: 1px;;" class="sidebarlink">
+            <div><img src="images/download_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="logo"></div>
+            <div class="logo_name">
+                <p class="logo_name_p">Downloads</p>
+            </div>
+        </div>
+        
+        <div class="sidebarlink">
+            <div style="  opacity:0.7;
+    margin-left: 15px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 19px;">
+                <p>Explore</p>
+            </div>
+            
+        </div>
+        <div class="sidebarlink">
+            <div><img src="images/shopping_bag_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="logo"></div>
+            <div class="logo_name">
+                <p class="logo_name_p">Shopping</p>
+            </div>
+        </div>
+        <div class="sidebarlink">
+            <div><img src="images/music_note_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="logo"></div>
+            <div class="logo_name">
+                <p class="logo_name_p">Music</p>
+            </div>
+        </div>
+        <div class="sidebarlink">
+            <div><img src="images/theaters_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="logo"></div>
+            <div class="logo_name">
+                <p class="logo_name_p">Films</p>
+            </div>
+        </div>
+        <div class="sidebarlink">
+            <div><img src="images/stadia_controller_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" class="logo"></div>
+            <div class="logo_name">
+                <p class="logo_name_p">Gaming</p>
+            </div>
+        </div>
+
+
+
+    </nav>
+    <main class="videos">
+        <div class="cards">
+            <div class="thumbrow">
+                <a href="https://www.youtube.com/watch?v=JrtxzAydvhc">
+                    <img src="images/yt3.jpg" class="thumb">
+                </a>
+                
+                <div class="video_len">
+                    14:20
+                </div>
+
+            </div>
+
+
+            <div class="bottom">
+                <a href="https://www.youtube.com/@Ayejude">
+                    <img src="images/profile4.jpg" class="prof">
+                </a>
+                
+                <div class="info">
+                    <p class="title">What really happend in that tajedict bus accident the real facts Exposed!!</p>
+                    <p class="channelnm">Aye Jude <span class="tick">&check;</span>
+                    </p>
+                    <p class="views">3.4M views &#8226 6 months ago</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="cards">
+            <div class="thumbrow">
+                <a href="https://www.youtube.com/watch?v=G3e-cpL7ofc"><img src="images/yt1.jpg" class="thumb"></a>
+                <div class="video_len">
+                    4:20:14
+                </div>
+
+            </div>
+
+
+            <div class="bottom">
+                <a href="https://www.youtube.com/@SuperSimpleDev">
+                        <img src="images/profile1.jpg" class="prof">
+                </a>
+            
+                <div class="info">
+                    <p class="title">Beginner to Advanced Html & CSS Course completely free with one real time project
+                        (Youtube clone)</p>
+                    <p class="channelnm">SuperSimpleDev <span class="tick">&check;</span>
+                    </p>
+                    <p class="views">14M views &#8226 2 years ago</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="cards">
+            <div class="thumbrow">
+                <img src="images/yt2.jpg" class="thumb">
+                <div class="video_len">
+                    10:10
+                </div>
+
+            </div>
+
+
+            <div class="bottom">
+                <img src="images/profile5flm.jpg" class="prof">
+                <div class="info">
+                    <p class="title">Top 10 High paying Off-Campus Internships Don't Miss!! </p>
+                    <p class="channelnm">FrontLinesMedia <span class="tick">&check;</span>
+                    </p>
+                    <p class="views">143k views &#8226 2 days ago</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="cards">
+            <div class="thumbrow">
+                <img src="images/thumb1.jpg" class="thumb">
+                <div class="video_len">
+                    14:20
+                </div>
+
+            </div>
+
+
+            <div class="bottom">
+                <img src="images/profile2.jpg" class="prof">
+                <div class="info">
+                    <p class="title">What really happend in that tajedict car accident the real facts Exposed!!</p>
+                    <p class="channelnm">Priya Journal <span class="tick">&check;</span>
+                    </p>
+                    <p class="views">99k views &#8226 6 months ago</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="cards">
+            <div class="thumbrow">
+                <img src="images/thumb2.avif" class="thumb">
+                <div class="video_len">
+                    14:20
+                </div>
+
+            </div>
+
+
+            <div class="bottom">
+                <img src="images/profile3.jpg" class="prof">
+                <div class="info">
+                    <p class="title">What really happend in that tajedict bus accident the real facts Exposed!!</p>
+                    <p class="channelnm">GouravTalks <span class="tick">&check;</span>
+                    </p>
+                    <p class="views">3.4M views &#8226 6 months ago</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="cards">
+            <div class="thumbrow">
+                <img src="images/thumb3.webp" class="thumb">
+                <div class="video_len">
+                    14:20
+                </div>
+
+            </div>
+
+
+            <div class="bottom">
+                <img src="images/profile5flm.jpg" class="prof">
+                <div class="info">
+                    <p class="title">What really happend in that tajedict bus accident the real facts Exposed!!</p>
+                    <p class="channelnm">FrontLinesMedia <span class="tick">&check;</span>
+                    </p>
+                    <p class="views">3.4M views &#8226 6 months ago</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="cards">
+            <div class="thumbrow">
+                <img src="images/thumb4.webp" class="thumb">
+                <div class="video_len">
+                    14:20
+                </div>
+
+            </div>
+
+
+            <div class="bottom">
+                <img src="images/profile4.jpg" class="prof">
+                <div class="info">
+                    <p class="title">What really happend in that tajedict bus accident the real facts Exposed!!</p>
+                    <p class="channelnm">Aye Jude <span class="tick">&check;</span>
+                    </p>
+                    <p class="views">3.4M views &#8226 6 months ago</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="cards">
+            <div class="thumbrow">
+                <img src="images/thumb5.webp" class="thumb">
+                <div class="video_len">
+                    14:20
+                </div>
+
+            </div>
+
+
+            <div class="bottom">
+                <img src="images/profile5raj.jpg" class="prof">
+                <div class="info">
+                    <p class="title">What really happend in that tajedict bus accident the real facts Exposed!!</p>
+                    <p class="channelnm">Raj Shamani <span class="tick">&check;</span>
+                    </p>
+                    <p class="views">3.4M views &#8226 6 months ago</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="cards">
+            <div class="thumbrow">
+                <img src="images/thumb6.webp" class="thumb">
+                <div class="video_len">
+                    14:20
+                </div>
+
+            </div>
+
+
+            <div class="bottom">
+                <img src="images/profile7.jpg" class="prof">
+                <div class="info">
+                    <p class="title">What really happend in that tajedict bus accident the real facts Exposed!!</p>
+                    <p class="channelnm">Learn English <span class="tick">&check;</span>
+                    </p>
+                    <p class="views">3.4M views &#8226 6 months ago</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="cards">
+            <div class="thumbrow">
+                <img src="images/thumb7.webp" class="thumb">
+                <div class="video_len">
+                    14:20
+                </div>
+
+            </div>
+
+
+            <div class="bottom">
+                <img src="images/profile1.jpg" class="prof">
+                <div class="info">
+                    <p class="title">What really happend in that tajedict bus accident the real facts Exposed!!</p>
+                    <p class="channelnm">SuperSimpleDev <span class="tick">&check;</span>
+                    </p>
+                    <p class="views">3.4M views &#8226 6 months ago</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="cards">
+            <div class="thumbrow">
+                <img src="images/thumb8.webp" class="thumb">
+                <div class="video_len">
+                    14:20
+                </div>
+
+            </div>
+
+
+            <div class="bottom">
+                <img src="images/profile1.jpg" class="prof">
+                <div class="info">
+                    <p class="title">What really happend in that tajedict bus accident the real facts Exposed!!</p>
+                    <p class="channelnm">SuperSimpleDev <span class="tick">&check;</span>
+                    </p>
+                    <p class="views">3.4M views &#8226 6 months ago</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
